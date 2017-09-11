@@ -71,7 +71,7 @@ public class ReadDirectory {
 		} else {
 			System.out.println(fileToZip.toString());
 			FileUtils.copyFileToDirectory(fileToZip, new File(folder));
-		
+			Details.fileInfo(fileToZip);
 			System.out.println("count-- "+ ++count);
 		}
 		
